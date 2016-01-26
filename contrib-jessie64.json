@@ -39,7 +39,7 @@
       "ssh_port": "22",
       "ssh_wait_timeout": "10000s",
       "type": "virtualbox-iso",
-      "vm_name": "debiancontrib-jessie",
+      "vm_name": "idev-basebox-jessie64",
       "vboxmanage": [
         ["modifyvm", "{{.Name}}", "--memory", "512"],
         ["modifyvm", "{{.Name}}", "--cpus", "1"]
@@ -50,11 +50,11 @@
     [
       {
         "type": "vagrant",
-        "output": "contrib-jessie64.box"
+        "output": "idev-basebox-jessie64.box"
       },
       {
         "type": "atlas",
-        "artifact": "debian/contrib-jessie64",
+        "artifact": "kiesel/idev-basebox-jessie64",
         "artifact_type": "vagrant.box",
         "token": "{{user `atlas_token`}}",
         "metadata": {
@@ -86,7 +86,7 @@
   ],
   "push": {
     "vcs": true,
-    "name": "debian/contrib-jessie64"
+    "name": "kiesel/idev-basebox-jessie64"
   }
 }
 
