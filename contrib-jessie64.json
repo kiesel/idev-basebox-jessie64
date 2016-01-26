@@ -24,7 +24,7 @@
         "keyboard-configuration/xkb-keymap=us <wait>",
         "<enter><wait>"
       ],
-      "disk_size": "10140",
+      "disk_size": "101400",
       "guest_additions_mode": "upload",
       "guest_os_type": "Debian_64",
       "hard_drive_interface": "sata",
@@ -42,7 +42,7 @@
       "vm_name": "idev-basebox-jessie64",
       "vboxmanage": [
         ["modifyvm", "{{.Name}}", "--memory", "512"],
-        ["modifyvm", "{{.Name}}", "--cpus", "1"]
+        ["modifyvm", "{{.Name}}", "--cpus", "2"]
       ]
     }
   ],
